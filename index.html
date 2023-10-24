@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button class="theme"></button>
+
+    <div class="new_task_layout">
+        <div class="new_task_container">
+            <form class="new_task_form">
+                <h2>CREATE TASK</h2>
+                <div>
+                    <input type="text" placeholder="Task description...">
+                </div>
+                <h3>Categories</h3>
+                <div class="categorie_block">
+                    <div class="category-item">
+                        <input checked type="radio" id="urgent" name="category" value="urgent" />
+                        <label for="urgent">Urgent</label>
+                    </div>
+                    <div class="caterogy-item">
+                        <input type="radio" id="important" name="category" value="important" />
+                        <label for="important">Important</label>
+                    </div>
+                    <div class="caterogy-item">
+                        <input type="radio" id="later" name="category" value="later" />
+                        <label for="later">Later</label>
+                    </div>
+                    <div class="caterogy-item">
+                        <input type="radio" id="tostudy" name="category" value="tostudy" />
+                        <label for="tostudy">To study</label>
+                    </div>
+                    <div class="caterogy-item">
+                        <input type="radio" id="completed" name="category" value="completed" />
+                        <label for="completed">Completed</label>
+                    </div>
+                </div>
+                <input type="submit" value="SUBMIT TASK"></input>
+
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
