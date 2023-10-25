@@ -4,15 +4,21 @@ let theme_btn = document.querySelector('.theme')
 html.style.setProperty('--current_theme', "dark")
 theme_btn.addEventListener('click', () => {
     if (html.style.getPropertyValue('--current_theme') == "dark") {
+        // light
         html.style.setProperty('--bg_color', "var(--bg_color_light)")
         html.style.setProperty('--theme_button', "var(--theme_button_light)")
         html.style.setProperty('--bg_task', 'var(--bg_task_light)')
         html.style.setProperty('--current_theme', "light")
+        html.style.setProperty('--task_block_shadow','var(--task_block_shadow_light)')
+        html.style.setProperty('--tasks_block_bg_color','var(--tasks_block_bg_color_light)')
     } else {
+        //dark
         html.style.setProperty('--current_theme', "dark")
         html.style.setProperty('--bg_color', "var(--bg_color_dark)")
         html.style.setProperty('--theme_button', "var(--theme_button_dark)")
         html.style.setProperty('--bg_task', 'var(--bg_task_dark)')
+        html.style.setProperty('--task_block_shadow','var(--task_block_shadow_dark)')
+        html.style.setProperty('--tasks_block_bg_color','var(--tasks_block_bg_color_dark)')
     }
 })
 
