@@ -10,40 +10,74 @@
 
 <body>
 
-<h1>PERSONAL TASK MANAGER</h1>
+    <h1>PERSONAL TASK MANAGER</h1>
     <button class="theme"></button>
     <div class="main_container">
         <div class="side_bar">
             <div class="line"></div>
             <h2>Categories</h2>
             <ul class="sidebar_categories">
-                <li class="category_item">Completed</li>
-                <li class="category_item">Urgent</li>
-                <li class="category_item">Important</li>
-                <li class="category_item">Later</li>
-                <li class="category_item">To study</li>
+                <li class="category_item" data-value="completed">Completed</li>
+                <li class="category_item" data-value="urgent">Urgent</li>
+                <li class="category_item" data-value="important">Important</li>
+                <li class="category_item" data-value="later">Later</li>
+                <li class="category_item" data-value="to-study">To study</li>
             </ul>
         </div>
         <div class="add_task_header">
-
+            <p>5 task</p>
+            <button id="add_new_task">Add new task</button>
+            <button id="clear_complited">Clear completed</button>
         </div>
         <div class="tasks">
-
+            <div class="tasks-containter">
+                <div class="task_item">
+                    <input type="checkbox" id="task1">
+                    <label for="task1"></label>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="item_category completed"></div>
+                </div>
+                <div class="task_item" >
+                    <input type="checkbox"id="task2">
+                    <label for="task2"></label>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="item_category urgent"></div>
+                </div>
+                <div class="task_item">
+                    <input type="checkbox" id="task3">
+                    <label for="task3"></label>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="item_category important"></div>
+                </div>
+                <div class="task_item">
+                    <input type="checkbox" id="task4">
+                    <label for="task4"></label>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="item_category later"></div>
+                </div>
+                <div class="task_item">
+                    <input type="checkbox" id="task5">
+                    <label for="task5"></label>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="item_category to-study"></div>
+                </div>
+            </div>
+            <form class="tasks_footer">
+                <div class="filter">
+                    <input type="radio" id ="filter1" name="filter" value="active">
+                    <label for="filter1">Active</label>
+                </div>
+                <div class="filter">
+                    <input checked id="filter2" type="radio" name="filter" value="all" >
+                    <label for="filter2">All</label>
+                </div>
+                <div class="filter">
+                    <input type="radio" id="filter3" name="filter" value="completed">
+                    <label for="filter3">Completed</label>
+                </div>
+            </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="new_task_layout">
         <div class="new_task_container">
