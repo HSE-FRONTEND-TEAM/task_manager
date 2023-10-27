@@ -112,6 +112,15 @@ new_task_button.addEventListener('click', (event) => {
 function updateTasks() {
     all_tasks = document.querySelectorAll('.task_item');
     tasks_count = all_tasks.length
+    for (let i = 0; i< all_tasks.length; i++) {
+        let task = all_tasks[i]
+        console.log(task)
+        let inp = task.querySelector('input')
+        let label = task.querySelector('label')
+        console.log(label)
+        inp.id = `task${i+1}` 
+        label.setAttribute('for',`task${i+1}`)
+    }
 }
 
 function updateTaskHeaderText() {
